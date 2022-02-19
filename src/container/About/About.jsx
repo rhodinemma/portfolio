@@ -3,7 +3,6 @@ import "./About.scss";
 import { motion } from "framer-motion";
 import { images } from "../../constants";
 
-
 const About = () => {
   const abouts = [
     {
@@ -35,7 +34,7 @@ const About = () => {
         <br /> means <span> Good Business</span>
       </h2>
 
-      <div className="app__profiles">
+      <div id="about" className="app__profiles">
         {abouts.map((about, index) => (
           <motion.div
             whileInView={{ opacity: 1 }}
